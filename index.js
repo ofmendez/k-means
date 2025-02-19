@@ -15,6 +15,8 @@ const Set4Coords = () => {
 
 
 const AddPoint = () => {
+	window.btn4Coord.disabled = true;
+
 	const point = document.createElement('div');
 	point.innerHTML = `
       <span>${pts}: </span>
