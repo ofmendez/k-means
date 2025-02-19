@@ -6,46 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>K-means</title>
   <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-  body { margin-top: 50px;}
-  input { width: 50px; margin-bottom: 10px; height: 20px;}
-  button { height: 28px;}
-  .res { border: 1px solid green; padding: 5px;  margin-left: 5px; }
-</style>
 
 <body>
   <div>
     <button onclick="AddPoint()">Add Point</button>
-    <br/>
-    <br/>
+    <button id="btn4Coord" onclick="Set4Coords()"> Set 4 coords</button>
+    <br /> <br />
     <div id="points"></div>
-    <br/>
+    <br />
     <div>
       <span>C0</span>
-      <input type="number" value="0.0" id="cx1">
-      <input type="number" value="0.0" id="cy1">
-      <input type="number" value="0.0" id="cz1">
-      <span class='res' id="result1">--</span>
+      <input type="number" value="0.00" id="cX0">
+      <input type="number" value="0.00" id="cY0">
+      <input type="number" value="0.00" id="cZ0">
+      <input class="coord4" type="number" value="0.00" id="cM0">
     </div>
     <div>
       <span>C1</span>
-      <input type="number" value="0.0" id="cx2">
-      <input type="number" value="0.0" id="cy2">
-      <input type="number" value="0.0" id="cz2">
-      <span class='res' id="result2">--</span>
+      <input type="number" value="0.00" id="cX1">
+      <input type="number" value="0.00" id="cY1">
+      <input type="number" value="0.00" id="cZ1">
+      <input  class="coord4" type="number" value="0.00" id="cM1">
     </div>
     <div>
       <span>C2</span>
-      <input type="number" value="0.0" id="cx3">
-      <input type="number" value="0.0" id="cy3">
-      <input type="number" value="0.0" id="cz3">
-      <span class='res' id="result3">--</span>
+      <input type="number" value="0.00" id="cX2">
+      <input type="number" value="0.00" id="cY2">
+      <input type="number" value="0.00" id="cZ2">
+      <input  class="coord4" type="number" value="0.00" id="cM2">
     </div>
   </div>
-  <br/>
+  <br />
   <button onclick="CalcAll()">Calc All</button>
-
+  <button id="btnApply" disabled onclick="CopyCentroids()">⬆️ Apply New centroids </button>
+  <div id="newCents"></div>
 </body>
 
 </html>

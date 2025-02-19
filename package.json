@@ -1,0 +1,11 @@
+{
+	"name": "k-means",
+	"module": "index.html",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest",
+		"esbuild": "^0.24.2",
+		"eslint": "^8.57.0",
+		"standard": "^17.1.0"
+	}
+}

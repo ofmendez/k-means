@@ -1,0 +1,22 @@
+body {
+  margin: 35px;
+}
+
+input {
+  width: 50px;
+  margin-bottom: 8px;
+  height: 20px;
+}
+
+button {
+  height: 28px;
+}
+.coord4 {
+  display: none;
+}
+
+.res {
+  border: 1px dotted green;
+  padding: 5px;
+  margin-left: 5px;
+}
