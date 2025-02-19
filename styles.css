@@ -1,5 +1,6 @@
 body {
   margin: 35px;
+  font-family: Arial, sans-serif;
 }
 
 input {
@@ -19,4 +20,8 @@ button {
   border: 1px dotted green;
   padding: 5px;
   margin-left: 5px;
+}
+.divisor {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
